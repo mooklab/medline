@@ -1,0 +1,18 @@
+extends common/pug/_layout.pug
+
+block links
+    link(rel="stylesheet", href="css/404.css")
+
+block content
+    section.error
+        div.container
+
+            h1
+                div
+                    span 4
+                    span 0
+                    span 4
+            div.text
+                strong Ой...Мы не можем найти эту страницу!
+                span Мы сожалеем, но страница на которую Вы попытались перейти не существует. Пожалуйста вернитесь на главную страницу
+            a(href="index.html").button.blue На главную

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+section.policy {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  font-size: 20px;
+  line-height: 1.7em;
+}
+@media (max-width: 960px) {
+  section.policy {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 16px;
+  }
+}
+section.policy div.container {
+  display: grid;
+  grid-gap: 20px;
+  max-width: 1080px;
+}
+@media (max-width: 960px) {
+  section.policy div.container {
+    grid-gap: 10px;
+  }
+}
+section.policy h1 {
+  font-size: 72px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1280px) {
+  section.policy h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 960px) {
+  section.policy h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 640px) {
+  section.policy h1 {
+    font-size: 30px;
+  }
+}
+section.policy h2 {
+  font-size: 36px;
+  margin-top: 40px;
+}
+@media (max-width: 1280px) {
+  section.policy h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 960px) {
+  section.policy h2 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
+section.policy strong {
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 1.7em;
+}
+@media (max-width: 960px) {
+  section.policy strong {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+}
+section.policy p {
+  font-size: 20px;
+  line-height: 1.7em;
+}
+@media (max-width: 960px) {
+  section.policy p {
+    font-size: 15px;
+  }
+}
+section.policy ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+section.policy ul {
+  padding-left: 10px;
+}
+section.policy ul li:before {
+  content: "·";
+  font-size: 18px;
+  padding-right: 10px;
+}/*# sourceMappingURL=policy.css.map */

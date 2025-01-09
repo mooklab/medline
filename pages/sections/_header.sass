@@ -1,0 +1,70 @@
+header
+    position: sticky
+    top: 0
+    padding-top: 30px
+    padding-bottom: 30px
+    background: white
+    box-shadow: 0 10px 30px 0 rgba(55, 62, 75, 0.05)
+    transition: all .3s
+    z-index: 999
+
+    div.container
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        align-items: center
+        justify-content: space-between
+        grid-gap: 15px
+
+    a.logotype
+        line-height: 0
+        img
+            width: 160px
+            +screen(m)
+                width: 100px
+
+    a.phone
+        font-weight: 600
+        font-size: 21px
+        +screen(m)
+            font-size: 18px
+        +screen(xs)
+            font-size: 16px
+
+    menu
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        grid-gap: 30px
+        +screen(l)
+            display: none
+        a
+            font-weight: 500
+            font-size: 18px
+            &:hover
+                color: $color-blue
+
+    div.socials
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        grid-gap: 30px
+        +screen(m)
+            grid-gap: 10px
+        +screen(s)
+            display: none
+
+    div.menu
+        cursor: pointer
+        display: none
+        width: 36px
+        svg
+            width: 100%
+        +screen(l)
+            display: grid
+            align-items: center
+
+    &.transparent
+        background: rgba(255,255,255,0)
+        box-shadow: 0 10px 30px 0 rgba(55, 62, 75, 0)
+        

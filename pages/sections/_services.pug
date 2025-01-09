@@ -1,0 +1,23 @@
+mixin service(image, title, price)
+    div.service
+        div.frontside
+            span= title
+            img(src=image, alt=title)
+        div.backside
+            span.title= title
+            span.price= price
+            button.red Записаться
+
+section.services#services
+    div.container
+
+        h2 Услуги
+
+        div.list
+            +service('images/1.webp', 'Поездка из больницы домой', '3 000 ₽')
+            +service('images/2.webp', 'Поездка из дома в больницу', '3 000 ₽')
+            +service('images/3.webp', 'Поездка Туда/Обратно', '6 500 ₽')
+            +service('images/4.webp', 'Поездка на вокзал', '4 500 ₽')
+            +service('images/5.webp', 'Поездка в аэропорт', '5 500 ₽')
+            +service('images/6.webp', 'Междугородняя поездка', '5 000 ₽')
+            +service('images/7.webp', 'Платная госпитализация', '3 000 ₽')

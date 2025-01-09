@@ -1,0 +1,218 @@
+section.about
+    padding-top: 120px
+    padding-bottom: 120px
+    background: white
+    +screen(m)
+        padding-top: 80px
+        padding-bottom: 80px
+
+    div.container
+        display: grid
+        grid-gap: 80px
+
+    div.description
+        display: grid
+        grid-template-columns: 5fr 3fr
+        grid-gap: 60px
+        +screen(m)
+            grid-template-columns: 1fr
+
+        div.text
+            display: grid
+            grid-gap: 60px
+            +screen(m)
+                grid-gap: 40px
+
+            span
+                font-weight: 400
+                font-size: 20px
+                line-height: 150%
+                +screen(m)
+                    font-size: 16px
+                b
+                    font-weight: 600
+
+            div.advantages
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: 55px
+                counter-reset: advantages
+                +screen(s)
+                    grid-template-columns: 1fr
+                    grid-gap: 30px
+
+                div.advantage
+                    counter-increment: advantages
+                    display: grid
+                    align-items: end
+                    grid-template-columns: max-content 1fr
+                    grid-gap: 20px
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 150%
+                    +screen(m)
+                        font-size: 18px
+
+                    strong
+                        display: grid
+                        grid-gap: 5px
+                        &::before
+                            content: '0' counter(advantages)
+                            color: $color-blue
+                    br
+                        +screen(s)
+                            display: none
+
+        div.image
+            position: relative
+            width: 100%
+            height: 100%
+            +screen(m)
+                display: none
+
+            img
+                position: absolute
+                bottom: 0
+                left: 0
+                height: 100%
+                max-height: 540px
+
+    div.slider
+        display: grid
+        grid-gap: 40px
+        +screen(m)
+            grid-gap: 30px
+
+    div.swiper
+        width: 100%
+        min-width: 0
+        border-radius: 4px
+        user-select: none
+
+        div.swiper-slide
+            display: grid
+            justify-items: center
+            background: $color-gray
+
+        div.equipment
+            display: grid
+            grid-template-columns: 480px 1fr
+            align-items: center
+            grid-gap: 60px
+            max-width: 1280px
+            padding-left: 100px
+            padding-right: 100px
+            width: 100%
+            +screen(l)
+                grid-template-columns: repeat(2, 1fr)
+            +screen(m)
+                grid-template-columns: 1fr
+                grid-gap: 0px
+                padding: 30px
+
+            img
+                justify-self: center
+                width: 100%
+                mix-blend-mode: multiply
+                max-width: 480px
+
+            div.info
+                display: grid
+                grid-gap: 20px
+                padding-top: 60px
+                padding-bottom: 60px
+                +screen(m)
+                    padding: unset
+                    grid-gap: 10px
+
+                span
+                    font-size: 18px
+                    opacity: 0.7
+                    +screen(m)
+                        font-size: 16px
+
+                strong
+                    font-weight: 600
+                    font-size: 36px
+                    +screen(m)
+                        font-size: 24px
+                        margin-bottom: 10px
+
+                p
+                    font-size: 18px
+                    max-width: 640px
+                    +screen(m)
+                        font-size: 16px
+
+        div.swiper-navigation
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            justify-content: space-between
+            width: 100%
+            position: absolute
+            top: 50%
+            left: 0
+            z-index: 9
+            transform: translateY(-50%)
+            padding: 30px
+            pointer-events: none
+            +screen(s)
+                display: none
+            div.arrow
+                cursor: pointer
+                display: grid
+                align-items: center
+                justify-items: center
+                width: 40px
+                aspect-ratio: 1 / 1
+                border-radius: 50%
+                background: $color-red
+                pointer-events: auto
+
+                &:first-child
+                    transform: rotate(180deg)
+
+                &.swiper-button-disabled
+                    opacity: 0.1
+                    background: $color-black
+
+    div.swiper-pagination
+        position: static
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        justify-content: center
+        grid-gap: 20px
+        width: 100%
+        span.swiper-pagination-bullet
+            display: block
+            width: 40px
+            height: 2px
+            border-radius: 2px
+            margin: unset
+            background: $color-black
+            opacity: 0.3
+
+        span.swiper-pagination-bullet-active
+            background: $color-blue
+            opacity: 1
+
+    div.additional
+        display: grid
+        justify-items: center
+        grid-gap: 60px
+        max-width: 960px
+        margin: 0 auto
+        +screen(m)
+            grid-gap: 40px
+            text-align: center
+
+        div.buttons
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            grid-gap: 20px
+            +screen(m)
+                justify-content: center
+                grid-gap: 10px

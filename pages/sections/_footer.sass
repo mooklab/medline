@@ -1,0 +1,76 @@
+footer
+    background: #0C0032
+    color: white
+
+    div.top
+        display: grid
+        grid-template-columns: repeat(3, max-content)
+        justify-content: space-between
+        align-items: center
+        grid-gap: 30px
+        padding-top: 30px
+        padding-bottom: 30px
+        +screen(l)
+            grid-template-columns: 1fr max-content
+        +screen(m)
+            grid-template-columns: 1fr
+
+        a.logotype
+            img
+                width: 160px
+                +screen(m)
+                    width: 100px
+
+        div.contacts
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            align-items: center
+            grid-gap: 20px
+            font-size: 21px
+            font-weight: 600
+            +screen(m)
+                font-size: 18px
+                grid-auto-flow: row
+
+        div.socials
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            align-items: center
+            grid-gap: 20px
+
+        div.buttons
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            grid-gap: 20px
+            +screen(l)
+                grid-column: 2 span
+                justify-content: end
+            +screen(m)
+                grid-column: 1 span
+                justify-content: start
+
+    div.bottom
+        display: grid
+        grid-template-columns: 1fr max-content
+        align-items: center
+        justify-content: space-between
+        grid-gap: 30px
+        padding-top: 30px
+        padding-bottom: 30px
+        border-top: 1px solid rgba(140, 172, 255, 0.2)
+        +screen(s)
+            grid-template-columns: 1fr
+
+        div.links
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            align-items: center
+            grid-gap: 40px
+            font-size: 14px
+            +screen(m)
+                grid-auto-flow: row
+                grid-gap: 10px

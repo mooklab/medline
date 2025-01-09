@@ -1,0 +1,67 @@
+include ../common/pug/_mixins.pug
+
+section.form
+    div.container
+
+        h2 Запись #[br]на перевозку
+
+        form(onsubmit="event.preventDefault(); this.reset(); createDialog('success');")
+
+            div.contacts
+                +input('Фамилия, имя и отчество', 'text', true)
+                +input('Телефон', 'tel', true)
+                +input('Электронная почта', 'email', true)
+
+            div.patient
+                div.radio
+                    strong Пол пациента
+                    +radio('gender', 'Мужской', 'Женский')
+                +input('Вес пациента (кг)', 'number', true)
+                div.radio
+                    strong Возраст пациента
+                    +radio('age', 'Взрослый', 'Ребенок (до 16 лет)')
+                div.radio
+                    strong Мобильность пациента
+                    +radio('mobility', 'Лежачий', 'На кресле-коляске', 'Самостоятельно')
+
+            div.condition
+                strong Состояние
+                fieldset.condition_radio
+                    label
+                        input(type="radio", value='Удовлитворительное', name='condition', checked)
+                        div.text
+                            strong Удовлитворительное
+                            span - пациент в стабильном состоянии, сопровождение бригады врачей не требуется.
+                    label
+                        input(type="radio", value='Удовлитворительное', name='condition')
+                        div.text
+                            strong Средней тяжести
+                            span - пациент в стабильном состоянии, но при транспортировке может понадобиться медицинская помощь.
+                    label
+                        input(type="radio", value='Удовлитворительное', name='condition')
+                        div.text
+                            strong Крайне тяжелое
+                            span - пациент находится в критическом состоянии, транспортировка возможна только на реанимобиле в сопровождении медицинской бригады.
+
+            div.service
+                +select('service', 'Поездка из больницы домой', 'Поездка из дома в больницу', 'Поездка Туда/Обратно', 'Поездка на вокзал', 'Поездка в аэропорт', 'Междугородняя поездка', 'Платная госпитализация')
+                div.date
+                    input(type="date", placeholder="YYYY/MM/DD", required)
+                    img(src="images/calendar.svg")
+
+            div.adresses
+                div.from
+                    div.adress
+                        +input('Откуда', 'text', true)
+                        +input('Этаж', 'number', false)
+                div.to
+                    div.adress
+                        +input('Куда', 'text', true)
+                        +input('Этаж', 'number', false)
+                    span(onclick="this.before(this.previousElementSibling.cloneNode(true))").add Добавить дополнительный адрес
+
+            textarea(name="message", placeholder="Что нам нужно еще знать")
+
+            div.submit
+                span Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия #[a(href="###") пользовательского соглашения].
+                button.blue Записаться

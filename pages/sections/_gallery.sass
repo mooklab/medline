@@ -1,0 +1,49 @@
+section.gallery
+    background: white
+
+    div.container
+        grid-column: full
+
+    div.swiper
+        overflow: visible
+        user-select: none
+
+    div.swiper-slide
+        img
+            width: 100%
+            aspect-ratio: 1 / 1
+            object-fit: cover
+            object-position: center
+            border-radius: 4px
+
+    div.swiper-navigation
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        justify-content: space-between
+        width: 100%
+        max-width: calc($content-maxwidth + var(--gap) * 2)
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 9
+        transform: translate(-50%, -50%)
+        pointer-events: none
+        padding: 30px
+        div.arrow
+            cursor: pointer
+            display: grid
+            align-items: center
+            justify-items: center
+            width: 40px
+            aspect-ratio: 1 / 1
+            border-radius: 50%
+            background: $color-blue
+            pointer-events: auto
+
+            &:first-child
+                transform: rotate(180deg)
+
+            &.swiper-button-disabled
+                opacity: 0.1
+                background: $color-black

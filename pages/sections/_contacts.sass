@@ -1,0 +1,77 @@
+section.contacts
+    padding-top: 160px
+    +screen(m)
+        padding-top: 80px
+
+    div.container
+        display: grid
+        align-items: start
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 0px
+        +screen(s)
+            grid-template-columns: 1fr
+
+    div.text
+        display: grid
+        grid-gap: 80px
+        margin-bottom: 160px
+        +screen(m)
+            grid-gap: 30px
+        +screen(s)
+            margin-bottom: 30px
+
+        strong
+            font-weight: 600
+            font-size: 20px
+            text-transform: uppercase
+            +screen(m)
+                font-size: 18px
+
+        a.phone
+            font-weight: 500
+            font-size: 72px
+            line-height: 100%
+            text-transform: uppercase
+            white-space: nowrap
+            +screen(l)
+                font-size: 48px
+            +screen(m)
+                font-size: 32px
+
+        div.socials
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 40px
+            +screen(l)
+                grid-template-columns: 1fr
+            +screen(m)
+                grid-gap: 20px
+
+            a
+                display: grid
+                grid-template-columns: max-content 1fr
+                align-items: center
+                grid-gap: 15px
+                font-weight: 600
+                font-size: 20px
+                +screen(m)
+                    font-size: 16px
+
+    div.image
+        width: 100%
+        height: 100%
+        +screen(l)
+            width: calc(100% + var(--gap))
+        +screen(s)
+            max-width: 320px
+            justify-self: center
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+            object-position: left bottom
+            +screen(l)
+                object-fit: cover
+            
+

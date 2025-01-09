@@ -1,0 +1,144 @@
+section.form
+    padding-top: 120px
+    padding-bottom: 120px
+    background: #F0F1FA
+
+    div.container
+        display: grid
+        grid-gap: 60px
+
+    form
+        display: grid
+        grid-gap: 60px
+        +screen(m)
+            grid-gap: 40px
+
+    div.contacts
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px
+        +screen(s)
+            grid-template-columns: 1fr
+
+        & > *:first-child
+            grid-column: 2 span
+            +screen(s)
+                grid-column: 1 span
+
+    div.patient
+        display: grid
+        align-items: start
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 60px 20px
+        +screen(s)
+            grid-template-columns: 1fr
+            grid-gap: 40px
+
+        & > *:nth-child(2)
+            align-self: end
+
+        div.radio
+            display: grid
+            grid-gap: 20px
+
+            strong
+                font-weight: 400
+                font-size: 24px
+
+            fieldset
+                display: flex
+                flex-wrap: wrap
+                gap: 30px 60px
+                +screen(l)
+                    gap: 20px 40px
+
+    div.condition
+        display: grid
+        grid-gap: 20px
+
+        & > strong
+            font-weight: 400
+            font-size: 24px
+
+    div.service
+        display: grid
+        grid-template-columns: 1fr 320px
+        grid-gap: 20px
+        +screen(m)
+            grid-template-columns: 1fr
+
+    div.adresses
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px
+        +screen(m)
+            grid-template-columns: 1fr
+
+        div.adress
+            display: grid
+            grid-template-columns: 1fr 80px
+            grid-gap: 20px
+
+        div.to
+            display: grid
+            grid-gap: 20px
+
+        span.add
+            cursor: pointer
+            position: relative
+            display: grid
+            justify-self: end
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            align-items: center
+            grid-gap: 10px
+            margin-top: 40px
+            +screen(m)
+                margin-top: 20px
+            &::after
+                content: ''
+                display: block
+                width: 30px
+                height: 30px
+                background: $color-red
+                border-radius: 50%
+            &::before
+                content: '+'
+                display: grid
+                align-items: center
+                justify-items: center
+                position: absolute
+                width: 30px
+                height: 30px
+                top: 0
+                right: 0
+                color: white
+
+    div.submit
+        display: grid
+        justify-self: end
+        grid-template-columns: 1fr max-content
+        align-items: center
+        grid-gap: 40px
+        text-align: right
+        max-width: 1080px
+        +screen(s)
+            grid-template-columns: 1fr
+            text-align: left
+
+        span
+            font-size: 15px
+            color: rgba(16, 22, 36, 0.7)
+            +screen(m)
+                font-size: 12px
+
+        a
+            color: $color-blue
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+        
+
+
+
+

@@ -1,0 +1,28 @@
+include ../../common/pug/_mixins.pug
+
+dialog(data-modal-name="proposal")
+    div.container
+
+        img(src="images/cross.svg", alt="", data-modal-close).cross
+
+        h2 Записаться #[br]онлайн
+
+        form(onsubmit="event.preventDefault(); this.reset(); createDialog('success');")
+            +input('Фамилия, имя и отчество', 'text', true)
+
+            div.row
+                +input('Телефон', 'tel', true)
+                div.date
+                    input(type="date", placeholder="YYYY/MM/DD", required)
+                    img(src="images/calendar.svg")
+
+            div.adress
+                +input('Откуда', 'text', true)
+                +input('Этаж', 'number', false)
+            div.adress
+                +input('Куда', 'text', true)
+                +input('Этаж', 'number', false)
+
+            div.submit
+                span Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия #[a(href="###") пользовательского соглашения].
+                button.blue Записаться

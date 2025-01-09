@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height">
+        <meta name="description" content="Описание сайта">
+        <meta name="keywords" content="Ключевые слова">
+        <title>Заголовок сайта</title>
+        <meta name="robots" content="index, follow">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="date=no">
+        <meta name="format-detection" content="address=no">
+        <meta name="format-detection" content="email=no">
+        <meta name="application-name" content="Заголовок сайта">
+        <meta name="color-scheme" content="only light">
+        <meta property="og:title" content="Заголовок сайта">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Описание сайта">
+        <meta property="og:image" content="Изображение">
+        <meta property="og:site_name" content="Заголовок сайта">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script defer src="scripts/main.js"></script>
+        <script defer src="scripts/modal.js"></script>
+        <script defer src="scripts/phone.js" data-reload></script>
+    </head>
+    <body>
+        <header>
+            <div class="container"><a class="logotype" href="index.html#main"><img src="images/logotype.svg"></a><a class="phone" href="tel:+79161814037">+7 (916) 181-40-37</a>
+                <menu><a href="index.html#services">Услуги</a><a href="index.html#about">О компании</a><a href="index.html#reviews">Отзывы</a><a href="index.html#contacts">Контакты</a></menu>
+                <div class="socials"><a href="https://wa.me/79161814037"><img src="images/whatsapp.svg"></a><a href="https://t.me/+79161814037"><img src="images/telegram.svg"></a><a href="mailto:ovn91@yandex.ru"><img src="images/mail.svg"></a><a href="https://www.avito.ru/mytischi/predlozheniya_uslug/transportirovka_lezhachih_bolnyh_1969695954"><img src="images/avito.svg"></a></div>
+                <div class="menu" data-modal-target="menu"><svg width="41" height="18" viewBox="0 0 41 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 1H40" stroke="#3500D3" stroke-width="2" stroke-linecap="round"/>
+<path d="M1.5 9H40" stroke="#3500D3" stroke-width="2" stroke-linecap="round"/>
+<path d="M10 17H40" stroke="#3500D3" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main" id="main">
+                <div class="container">
+                    <div class="text">
+                        <h1>Перевозка <br>лежачих больных</h1><span>От кровати до кровати на спецавтомобиле в сопровождении двух санитаров</span>
+                        <div class="buttons">
+                            <button class="red" data-modal-target="proposal">Срочный вызов</button>
+                            <button class="blue" data-modal-target="proposal">Записаться онлайн</button>
+                        </div>
+                    </div>
+                    <div class="image"><img src="images/car.webp" alt=""></div>
+                </div>
+            </section>
+            <section class="discount">
+                <div class="container"><img src="images/discount.webp" alt=""></div>
+            </section>
+            <section class="services" id="services">
+                <div class="container">
+                    <h2>Услуги</h2>
+                    <div class="list">
+                                    <div class="service">
+                                        <div class="frontside"><span>Поездка из больницы домой</span><img src="images/1.webp" alt="Поездка из больницы домой"></div>
+                                        <div class="backside"><span class="title">Поездка из больницы домой</span><span class="price">3 000 ₽</span>
+                                            <button class="red">Записаться</button>
+                                        </div>
+                                    </div>
+                                    <div class="service">
+                                        <div class="frontside"><span>Поездка из дома в больницу</span><img src="images/2.webp" alt="Поездка из дома в больницу"></div>
+                                        <div class="backside"><span class="title">Поездка из дома в больницу</span><span class="price">3 000 ₽</span>
+                                            <button class="red">Записаться</button>
+                                        </div>
+                                    </div>
+                                    <div class="service">
+                                        <div class="frontside"><span>Поездка Туда/Обратно</span><img src="images/3.webp" alt="Поездка Туда/Обратно"></div>
+                                        <div class="backside"><span class="title">Поездка Туда/Обратно</span><span class="price">6 500 ₽</span>
+                                            <button class="red">Записаться</button>
+                                        </div>
+                                    </div>
+                                    <div class="service">
+                                        <div class="frontside"><span>Поездка на вокзал</span><img src="images/4.webp" alt="Поездка на вокзал"></div>
+                                        <div class="backside"><span class="title">Поездка на вокзал</span><span class="price">4 500 ₽</span>
+                                            <button class="red">Записаться</button>
+                                        </div>
+                                    </div>
+                                    <div class="service">
+                                        <div class="frontside"><span>Поездка в аэропорт</span><img src="images/5.webp" alt="Поездка в аэропорт"></div>
+                                        <div class="backside"><span class="title">Поездка в аэропорт</span><span class="price">5 500 ₽</span>
+                                            <button class="red">Записаться</button>
+                                        </div>
+                                    </div>
+                                    <div class="service">
+                                        <div class="frontside"><span>Междугородняя поездка</span><img src="images/6.webp" alt="Междугородняя поездка"></div>
+                                        <div class="backside"><span class="title">Междугородняя поездка</span><span class="price">5 000 ₽</span>
+                                            <button class="red">Записаться</button>
+                                        </div>
+                                    </div>
+                                    <div class="service">
+                                        <div class="frontside"><span>Платная госпитализация</span><img src="images/7.webp" alt="Платная госпитализация"></div>
+                                        <div class="backside"><span class="title">Платная госпитализация</span><span class="price">3 000 ₽</span>
+                                            <button class="red">Записаться</button>
+                                        </div>
+                                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="description">
+                        <div class="text">
+                            <h2>О компании</h2><span>Наша компания специализируется на перевозке лежачих больных, предоставляя услуги безопасного и комфортного медицинского транспорта. Мы понимаем, насколько важно обеспечить пациенту бережное обращение, поэтому <b>все наши автомобили оснащены современным оборудованием</b>, а персонал проходит профессиональную подготовку.</span>
+                            <div class="advantages">
+                                            <div class="advantage"><img src="images/advantage_1.svg" alt="Современное &lt;br&gt;оснащение"><strong>Современное <br>оснащение</strong></div>
+                                            <div class="advantage"><img src="images/advantage_2.svg" alt="Профессиональный &lt;br&gt;персонал"><strong>Профессиональный <br>персонал</strong></div>
+                                            <div class="advantage"><img src="images/advantage_3.svg" alt="Гибкие &lt;br&gt;маршруты"><strong>Гибкие <br>маршруты</strong></div>
+                                            <div class="advantage"><img src="images/advantage_4.svg" alt="Доступные &lt;br&gt;цены"><strong>Доступные <br>цены</strong></div>
+                            </div>
+                        </div>
+                        <div class="image"><img src="images/8.webp" alt=""></div>
+                    </div>
+                    <div class="slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                                <div class="equipment"><img src="images/9.webp" alt="Носилки каталки">
+                                                    <div class="info"><span>Мы используем</span><strong>Носилки каталки</strong>
+                                                        <p>Носилки-каталка идеально подходят для перевозки людей не имеющих возможности передвигаться сидя. Выдерживают вес свыше 150 кг и оснащены системой амортизации. Благодаря этому носилки не шатаются и транспортировка происходит в спокойном режиме.</p>
+                                                    </div>
+                                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                                <div class="equipment"><img src="images/10.webp" alt="Кресельные носилки">
+                                                    <div class="info"><span>Мы используем</span><strong>Кресельные носилки</strong>
+                                                        <p>Кресельные носилки используется для транспортировки людей с ограниченными возможностями. Подъем в автомобиль осуществляется на автоматической платформе, которая выполнена в форме конструкции с жестким креплением.</p>
+                                                    </div>
+                                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                                <div class="equipment"><img src="images/11.webp" alt="Мягкие носилки">
+                                                    <div class="info"><span>Мы используем</span><strong>Мягкие носилки</strong>
+                                                        <p>Носилки волокуши особенно незаменимы когда необходима транспортировка в домах советского типа постройки где отсутствует грузовой лифт. Перемещение по этажам производится вручную. При этом за счет жестко закрепленных ручек и гибкого материала носилок человек ощущает спуск и подъем достаточно комфортно.</p>
+                                                    </div>
+                                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-navigation">
+                                <div class="arrow"><svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 2L12 10L4 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                                </div>
+                                <div class="arrow"><svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 2L12 10L4 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="additional">
+                        <p>Мы организуем транспортировку пациентов как внутри города, так и на междугородние расстояния, включая доставку в больницы, реабилитационные центры и домой. <b>Внимательность к деталям, ответственность и забота о каждом клиенте</b> — это то, что делает нас надежным партнером для вас и ваших близких.</p>
+                        <div class="buttons">
+                            <button class="red" data-modal-target="proposal">Срочный вызов</button>
+                            <button class="blue" data-modal-target="proposal">Записаться онлайн</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/12.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="images/13.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="images/14.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="images/15.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="images/12.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="images/13.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="images/14.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="images/15.webp" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation">
+                        <div class="arrow"><svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 2L12 10L4 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                        </div>
+                        <div class="arrow"><svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 2L12 10L4 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews" id="reviews">
+                <div class="container">
+                    <div class="title">
+                        <h2>Отзывы о нас</h2><a class="avito" href="https://www.avito.ru/" target="_blank"><span>Отзывы на</span><img src="images/avito.svg" alt=""></a>
+                        <div class="swiper-navigation">
+                            <div class="arrow"><svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 2L12 10L4 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                            </div>
+                            <div class="arrow"><svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 2L12 10L4 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper reviews">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="top"><span>23 июня 2023</span>
+                                                    <div class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"></div>
+                                                </div>
+                                                <h3>Ольга</h3>
+                                                <p>Отличная слаженная работа от момента заказа до его выполнения. Ребята большие молодцы, приехали заранее, были вежливы и внимательны. Цена стандартная для такого рода услуги, но значительно дешевле, чем предлагают специализированные фирмы, контакты которых дают в реабилитационных центрах и больницах. Благодарю, Влад! При необходимости обращусь к Вам обязательно. Спасибо за Вашу работу.</p>
+                                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="top"><span>13 июня 2023</span>
+                                                    <div class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"></div>
+                                                </div>
+                                                <h3>Инна</h3>
+                                                <p>Перевозили лежачую маму в больницу . Бригадой очень довольны, за минуту 40 до прибытия позвонили, довезли в сохранности быстро а аккуратно, очень вежливые ребята. Рекомендую 👍</p>
+                                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="top"><span>23 июня 2023</span>
+                                                    <div class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"></div>
+                                                </div>
+                                                <h3>Ольга</h3>
+                                                <p>Отличная слаженная работа от момента заказа до его выполнения. Ребята большие молодцы, приехали заранее, были вежливы и внимательны. Цена стандартная для такого рода услуги, но значительно дешевле, чем предлагают специализированные фирмы, контакты которых дают в реабилитационных центрах и больницах. Благодарю, Влад! При необходимости обращусь к Вам обязательно. Спасибо за Вашу работу.</p>
+                                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="top"><span>13 июня 2023</span>
+                                                    <div class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"></div>
+                                                </div>
+                                                <h3>Инна</h3>
+                                                <p>Перевозили лежачую маму в больницу . Бригадой очень довольны, за минуту 40 до прибытия позвонили, довезли в сохранности быстро а аккуратно, очень вежливые ребята. Рекомендую 👍</p>
+                                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="top"><span>23 июня 2023</span>
+                                                    <div class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"></div>
+                                                </div>
+                                                <h3>Ольга</h3>
+                                                <p>Отличная слаженная работа от момента заказа до его выполнения. Ребята большие молодцы, приехали заранее, были вежливы и внимательны. Цена стандартная для такого рода услуги, но значительно дешевле, чем предлагают специализированные фирмы, контакты которых дают в реабилитационных центрах и больницах. Благодарю, Влад! При необходимости обращусь к Вам обязательно. Спасибо за Вашу работу.</p>
+                                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                            <div class="review">
+                                                <div class="top"><span>13 июня 2023</span>
+                                                    <div class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"></div>
+                                                </div>
+                                                <h3>Инна</h3>
+                                                <p>Перевозили лежачую маму в больницу . Бригадой очень довольны, за минуту 40 до прибытия позвонили, довезли в сохранности быстро а аккуратно, очень вежливые ребята. Рекомендую 👍</p>
+                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <div class="text"><strong>Свяжитесь с нами <br>Любым удобным для вас способом:</strong><a class="phone" href="tel:79161814037">+7 (916) 181-40-37</a>
+                        <div class="socials"><a href="https://wa.me/79161814037"><img src="images/whatsapp.svg"><span>Напишите в Whatsapp</span></a><a href="https://t.me/+79161814037"><img src="images/telegram.svg"><span>Напишите в Telegram</span></a><a href="ovn91@yandex.ru"><img src="images/mail.svg"><span>Напишите на почту</span></a></div>
+                    </div>
+                    <div class="image"><img src="images/16.webp" alt=" "></div>
+                </div>
+            </section>
+            <section class="form">
+                <div class="container">
+                    <h2>Запись <br>на перевозку</h2>
+                    <form onsubmit="event.preventDefault(); this.reset(); createDialog('success');">
+                        <div class="contacts">
+                                        <label class="text">
+                                            <input type="text" placeholder="Фамилия, имя и отчество" required><span>Фамилия, имя и отчество</span>
+                                        </label>
+                                        <label class="text">
+                                            <input type="tel" placeholder="Телефон" required><span>Телефон</span>
+                                        </label>
+                                        <label class="text">
+                                            <input type="email" placeholder="Электронная почта" required><span>Электронная почта</span>
+                                        </label>
+                        </div>
+                        <div class="patient">
+                            <div class="radio"><strong>Пол пациента</strong>
+                                            <fieldset class="radio">
+                                                <input type="radio" id="gender_0" value="Мужской" name="gender" checked>
+                                                <label for="gender_0">Мужской</label>
+                                                <input type="radio" id="gender_1" value="Женский" name="gender">
+                                                <label for="gender_1">Женский</label>
+                                            </fieldset>
+                            </div>
+                                        <label class="text">
+                                            <input type="number" placeholder="Вес пациента (кг)" required><span>Вес пациента (кг)</span>
+                                        </label>
+                            <div class="radio"><strong>Возраст пациента</strong>
+                                            <fieldset class="radio">
+                                                <input type="radio" id="age_0" value="Взрослый" name="age" checked>
+                                                <label for="age_0">Взрослый</label>
+                                                <input type="radio" id="age_1" value="Ребенок (до 16 лет)" name="age">
+                                                <label for="age_1">Ребенок (до 16 лет)</label>
+                                            </fieldset>
+                            </div>
+                            <div class="radio"><strong>Мобильность пациента</strong>
+                                            <fieldset class="radio">
+                                                <input type="radio" id="mobility_0" value="Лежачий" name="mobility" checked>
+                                                <label for="mobility_0">Лежачий</label>
+                                                <input type="radio" id="mobility_1" value="На кресле-коляске" name="mobility">
+                                                <label for="mobility_1">На кресле-коляске</label>
+                                                <input type="radio" id="mobility_2" value="Самостоятельно" name="mobility">
+                                                <label for="mobility_2">Самостоятельно</label>
+                                            </fieldset>
+                            </div>
+                        </div>
+                        <div class="condition"><strong>Состояние</strong>
+                            <fieldset class="condition_radio">
+                                <label>
+                                    <input type="radio" value="Удовлитворительное" name="condition" checked>
+                                    <div class="text"><strong>Удовлитворительное</strong><span>- пациент в стабильном состоянии, сопровождение бригады врачей не требуется.</span></div>
+                                </label>
+                                <label>
+                                    <input type="radio" value="Удовлитворительное" name="condition">
+                                    <div class="text"><strong>Средней тяжести</strong><span>- пациент в стабильном состоянии, но при транспортировке может понадобиться медицинская помощь.</span></div>
+                                </label>
+                                <label>
+                                    <input type="radio" value="Удовлитворительное" name="condition">
+                                    <div class="text"><strong>Крайне тяжелое</strong><span>- пациент находится в критическом состоянии, транспортировка возможна только на реанимобиле в сопровождении медицинской бригады.</span></div>
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="service">
+                                        <fieldset class="select service">
+                                            <div class="select_current" tabindex="0">
+                                                <input type="radio" id="service" value="Поездка из больницы домой" name="service" checked><span>Поездка из больницы домой</span>
+                                                <input type="radio" id="service_0" value="Поездка из дома в больницу" name="service"><span>Поездка из дома в больницу</span>
+                                                <input type="radio" id="service_1" value="Поездка Туда/Обратно" name="service"><span>Поездка Туда/Обратно</span>
+                                                <input type="radio" id="service_2" value="Поездка на вокзал" name="service"><span>Поездка на вокзал</span>
+                                                <input type="radio" id="service_3" value="Поездка в аэропорт" name="service"><span>Поездка в аэропорт</span>
+                                                <input type="radio" id="service_4" value="Междугородняя поездка" name="service"><span>Междугородняя поездка</span>
+                                                <input type="radio" id="service_5" value="Платная госпитализация" name="service"><span>Платная госпитализация</span>
+                                                <div class="arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L10 14L2 6" stroke="#C3073F" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+                                                </div>
+                                            </div>
+                                            <div class="select_list">
+                                                <label for="service_0">Поездка из дома в больницу</label>
+                                                <label for="service_1">Поездка Туда/Обратно</label>
+                                                <label for="service_2">Поездка на вокзал</label>
+                                                <label for="service_3">Поездка в аэропорт</label>
+                                                <label for="service_4">Междугородняя поездка</label>
+                                                <label for="service_5">Платная госпитализация</label>
+                                            </div>
+                                        </fieldset>
+                            <div class="date">
+                                <input type="date" placeholder="YYYY/MM/DD" required><img src="images/calendar.svg">
+                            </div>
+                        </div>
+                        <div class="adresses">
+                            <div class="from">
+                                <div class="adress">
+                                                <label class="text">
+                                                    <input type="text" placeholder="Откуда" required><span>Откуда</span>
+                                                </label>
+                                                <label class="text">
+                                                    <input type="number" placeholder="Этаж"><span>Этаж</span>
+                                                </label>
+                                </div>
+                            </div>
+                            <div class="to">
+                                <div class="adress">
+                                                <label class="text">
+                                                    <input type="text" placeholder="Куда" required><span>Куда</span>
+                                                </label>
+                                                <label class="text">
+                                                    <input type="number" placeholder="Этаж"><span>Этаж</span>
+                                                </label>
+                                </div><span class="add" onclick="this.before(this.previousElementSibling.cloneNode(true))">Добавить дополнительный адрес</span>
+                            </div>
+                        </div>
+                        <textarea name="message" placeholder="Что нам нужно еще знать"></textarea>
+                        <div class="submit"><span>Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="###">пользовательского соглашения</a>.</span>
+                            <button class="blue">Записаться</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <script>
+                header = document.querySelector('header')
+                header.classList.add('transparent')
+                
+                window.addEventListener('scroll', event => {
+                    this.scrollY > 0 ? header.classList.remove("transparent") : header.classList.add("transparent")
+                })
+            </script>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="top"><a class="logotype" href="index.html#main"><img src="images/logotype.svg" alt=""></a>
+                    <div class="contacts"><a class="phone" href="tel:+79161814037">+7 (916) 181-40-37</a>
+                        <div class="socials"><a href="https://wa.me/79161814037"><img src="images/whatsapp.svg"></a><a href="https://t.me/+79161814037"><img src="images/telegram.svg"></a><a href="mailto:ovn91@yandex.ru "><img src="images/mail.svg"></a><a href="https://www.avito.ru/mytischi/predlozheniya_uslug/transportirovka_lezhachih_bolnyh_1969695954"><img src="images/avito_light.svg"></a></div>
+                    </div>
+                    <div class="buttons">
+                        <button class="red" data-modal-target="proposal">Срочный вызов</button>
+                        <button class="blue" data-modal-target="proposal">Записаться онлайн</button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="links"><a href="policy.html">Политика конфиденциальности</a><a href="policy.html">Пользовательсоке соглашение</a></div><a class="develop" href="https://upgrad.pro/" target="blank"><img src="images/upgrade.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+section.reviews
+    padding-top: 160px
+    +screen(m)
+        padding-top: 80px
+
+    div.container
+        display: grid
+        grid-gap: 60px
+        +screen(m)
+            grid-gap: 40px
+
+    div.title
+        display: grid
+        grid-template-columns: 1fr max-content max-content
+        align-items: center
+        grid-gap: 60px
+        +screen(m)
+            grid-gap: 40px
+        +screen(s)
+            grid-template-columns: 1fr max-content
+            grid-gap: 30px
+
+        h2
+            +screen(s)
+                grid-column: 2 span
+
+        a.avito
+            display: grid
+            align-items: center
+            grid-template-columns: repeat(2, max-content)
+            grid-gap: 10px
+            text-decoration: underline
+
+    div.swiper
+        width: 100%
+        min-width: 0
+        user-select: none
+
+    div.swiper-navigation
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: max-content
+        justify-content: space-between
+        grid-gap: 15px
+        pointer-events: none
+        div.arrow
+            cursor: pointer
+            display: grid
+            align-items: center
+            justify-items: center
+            width: 40px
+            aspect-ratio: 1 / 1
+            border-radius: 50%
+            background: $color-red
+            pointer-events: auto
+            +screen(s)
+                width: 40px
+                height: 40px
+
+            &:first-child
+                transform: rotate(180deg)
+
+            &.swiper-button-disabled
+                opacity: 0.1
+                background: $color-black
+
+    div.review
+        display: grid
+        align-content: start
+        grid-gap: 20px
+        padding: 40px
+        border: 1px solid #C8CFEE
+        border-radius: 4px
+        height: 100%
+        +screen(m)
+            padding: 30px
+            font-size: 15px
+
+        div.top
+            display: grid
+            grid-template-columns: 1fr max-content
+            align-items: center
+
+            span
+                opacity: 0.7
+
+        div.stars
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            grid-gap: 5px
+
+        h3
+            font-weight: 400
+            font-size: 48px
+            line-height: 100%
+            +screen(m)
+                font-size: 30px

@@ -1,0 +1,65 @@
+section.error {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  height: 100%;
+}
+@media (max-width: 960px) {
+  section.error {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+section.error div.container {
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  grid-gap: 60px;
+  text-align: center;
+}
+section.error h1 {
+  font-size: 172px;
+  line-height: 1em;
+  font-weight: 700;
+  color: #3500D3;
+  justify-items: center;
+}
+@media (max-width: 960px) {
+  section.error h1 {
+    font-size: 100px;
+  }
+}
+section.error h1 div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+}
+section.error h1 div span {
+  line-height: inherit;
+}
+section.error h1 div span:nth-child(2) {
+  color: #C3073F;
+}
+section.error div.text {
+  display: grid;
+  grid-gap: 20px;
+}
+section.error div.text strong {
+  font-size: 30px;
+  font-weight: 600;
+}
+@media (max-width: 960px) {
+  section.error div.text strong {
+    font-size: 24px;
+  }
+}
+section.error div.text span {
+  font-size: 20px;
+  max-width: 760px;
+}
+@media (max-width: 960px) {
+  section.error div.text span {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=404.css.map */

@@ -1,0 +1,34 @@
+dialog[data-modal-name=success]
+    div.container
+        position: relative
+        background: white
+        padding: 80px 60px
+        display: grid
+        justify-items: center
+        grid-gap: 40px
+        max-width: 720px
+        width: 100%
+        text-align: center
+        +screen(m)
+            padding: 60px 30px
+            grid-gap: 20px
+
+    img.cross
+        position: absolute
+        top: 30px
+        right: 30px
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            transform: rotate(180deg)
+
+    h2
+        justify-items: center
+        font-size: 48px
+        +screen(m)
+            font-size: 30px
+
+    span
+        font-size: 20px
+        +screen(m)
+            font-size: 16px

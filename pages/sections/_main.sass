@@ -1,0 +1,70 @@
+section.main
+    padding-top: 160px
+    padding-bottom: 160px
+    +screen(m)
+        padding-top: 80px
+        padding-bottom: 80px
+
+    div.container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 60px
+        +screen(m)
+            grid-template-columns: 1fr
+            justify-items: center
+
+    div.text
+        +screen(m)
+            text-align: center
+            max-width: 480px
+
+        h1
+            +screen(m)
+                justify-items: center
+
+        span
+            display: block
+            font-weight: 600
+            font-size: 24px
+            line-height: 150%
+            margin-top: 40px
+            margin-bottom: 60px
+            +screen(l)
+                font-size: 21px
+            +screen(m)
+                font-size: 18px
+                margin-top: 30px
+                margin-bottom: 40px
+
+        div.buttons
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: max-content
+            grid-gap: 20px
+            +screen(m)
+                justify-content: center
+                grid-gap: 10px
+
+    div.image
+        position: relative
+        +screen(m)
+            width: 100%
+            aspect-ratio: 21 / 9
+        +screen(s)
+            aspect-ratio: 16 / 9
+
+        img
+            position: absolute
+            top: 50%
+            left: 0
+            width: 140%
+            max-height: calc(100% + 160px)
+            transform: translateY(-50%)
+            object-fit: contain
+            object-position: left center
+            +screen(m)
+                max-height: unset
+                width: 100%
+                height: 100%
+                position: relative
+                object-position: center center

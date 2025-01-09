@@ -1,0 +1,262 @@
+h1, h2
+    display: grid
+    grid-gap: 15px
+    font-weight: 500
+    font-size: 72px
+    line-height: 100%
+    text-transform: uppercase
+    color: $color-black
+    +screen(l)
+        font-size: 48px
+    +screen(m)
+        font-size: 36px
+
+    &::after
+        content: ''
+        display: block
+        width: 100px
+        height: 2px
+        background: $color-red
+
+button, a.button
+    cursor: pointer
+    border-radius: 4px
+    padding: 15px 25px
+    font-size: 16px
+    color: white
+    transition: filter .3s
+    +screen(xs)
+        font-size: 14px
+        padding: 12px 20px
+
+    &.red
+        background: $color-red
+
+    &.blue
+        background: $color-blue
+
+    &:hover
+        filter: brightness(125%)
+        
+label.text
+    position: relative
+    width: 100%
+    input
+        padding-top: 25px
+        padding-bottom: 20px
+        border-bottom: 1px solid $color-black
+        line-height: 1em
+        width: 100%
+        &[required] + span::after
+            content: ' *'
+            color: #c3073f
+        &::placeholder
+            opacity: 0
+        &:not(:placeholder-shown) + span,
+        &:focus + span
+            top: 0px
+            font-size: 12px
+            line-height: 12px
+
+    span
+        position: absolute
+        top: 25px
+        left: 0
+        color: rgba(16, 22, 36, 0.6)
+        line-height: 1em
+        pointer-events: none
+        transition: all .3s
+
+fieldset.select
+    height: max-content
+    position: relative
+    z-index: 9
+    &:hover
+        z-index: 10
+
+    div.select_current
+        position: relative
+        display: grid
+        grid-template-columns: 1fr max-content
+        grid-gap: 20px
+        align-items: center
+        cursor: pointer
+        outline: none
+        border-bottom: 1px solid $color-black
+        input
+            display: none
+            &:checked
+                & + span
+                    display: block
+        span
+            display: none
+            width: 100%
+            padding-top: 20px
+            padding-bottom: 20px
+        &:focus
+            pointer-events: none
+            div.arrow
+                transform: rotate(180deg)
+            & + div.select_list
+                opacity: 1
+                animation-name: none
+        div.arrow
+            display: grid
+            align-items: center
+            justify-items: center
+            transition: all 0.2s
+
+    div.select_list
+        display: block
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        height: max-content
+        opacity: 0
+        background: white
+        padding: 10px
+        animation-name: hideList
+        animation-duration: 0.5s
+        animation-delay: 0.5s
+        animation-fill-mode: forwards
+        animation-timing-function: step-start
+        overflow-y: auto
+        label
+            cursor: pointer
+            display: block
+            padding: 20px 10px
+            white-space: nowrap
+            &:hover, &:focus
+                color: $color-red
+            &:not(:last-child)
+                border-bottom: 1px solid #D9D9DC
+
+    @keyframes hideList
+        from
+            transform: scaleY(1)
+        to
+            transform: scaleY(0)
+
+fieldset.radio
+    input
+        display: none
+    input:checked + label
+        color: $color-black
+        &::after
+            content: ''
+            position: absolute
+            top: 6px
+            left: 6px
+            display: block
+            width: 10px
+            height: 10px
+            background: $color-blue
+            border-radius: 50%
+
+    label
+        cursor: pointer
+        position: relative
+        display: grid
+        grid-template-columns: max-content 1fr
+        grid-gap: 10px
+        color: rgba(16, 22, 36, 0.7)
+        &::before
+            content: ''
+            display: block
+            width: 20px
+            height: 20px
+            border: 1px solid #7986A9
+            border-radius: 50%
+
+fieldset.condition_radio
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px
+    +screen(m)
+        grid-template-columns: 1fr
+        
+    label
+        cursor: pointer
+        position: relative
+        display: block
+        border: 1px solid rgba(47, 56, 80, 0.2)
+        border-radius: 4px
+        padding: 30px
+        padding-left: 70px
+        &:has(input:checked)
+            background: $color-blue
+            color: white
+            &::after
+                content: ''
+                position: absolute
+                top: 36px
+                left: 36px
+                display: block
+                width: 10px
+                height: 10px
+                background: $color-blue
+                border-radius: 50%
+        &::before
+            content: ''
+            position: absolute
+            top: 30px
+            left: 30px
+            display: block
+            width: 20px
+            height: 20px
+            border: 1px solid #7986A9
+            border-radius: 50%
+            background: white
+
+    div.text
+        display: grid
+        grid-gap: 10px
+
+        strong
+            font-weight: 400
+            font-size: 18px
+
+        span
+            font-size: 15px
+            opacity: 0.7
+
+textarea
+    background: white
+    border: 1px solid rgba(16, 22, 36, 0.3)
+    border-radius: 4px
+    padding: 20px
+    height: 120px
+    &::placeholder
+        color: rgba(16, 22, 36, 0.6)
+
+div.date
+    position: relative
+    input[type="date"]
+        position: relative
+        padding-top: 25px
+        padding-bottom: 20px
+        border-bottom: 1px solid $color-black
+        line-height: 1em
+        width: 100%
+        &::-webkit-calendar-picker-indicator
+            cursor: pointer
+            color: transparent
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: none
+            z-index: 1
+        &:invalid::-webkit-datetime-edit
+            color: rgba(16, 22, 36, 0.6)
+    img
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        pointer-events: none
+
+
+

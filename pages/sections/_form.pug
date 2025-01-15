@@ -58,7 +58,7 @@ section.form
                     div.adress
                         +input('Куда', 'text', true)
                         +input('Этаж', 'number', false)
-                    span(onclick="this.before(this.previousElementSibling.cloneNode(true))").add Добавить дополнительный адрес
+                    span(onclick="this.before(this.previousElementSibling.cloneNode(true)); this.previousElementSibling.querySelector('input').removeAttribute('required')").add Добавить дополнительный адрес
 
             textarea(name="message", placeholder="Что нам нужно еще знать")
 

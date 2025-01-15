@@ -6,7 +6,7 @@ mixin service(image, title, price)
         div.backside
             span.title= title
             span.price= price
-            button.red Записаться
+            button(data-modal-target="proposal").red Записаться
 
 section.services#services
     div.container

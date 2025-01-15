@@ -14,6 +14,7 @@ mixin select(name, title, ...items)
             div.arrow
                 include ../../../images/select_arrow.svg
         div.select_list
+            label(for=name)= title
             each item, index in items
                 label(for=name + '_' + index)= item
 

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 section.main {
+  position: relative;
   padding-top: 160px;
   padding-bottom: 160px;
 }
@@ -13,6 +14,7 @@ section.main div.container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 60px;
+  z-index: 2;
 }
 @media (max-width: 960px) {
   section.main div.container {
@@ -103,6 +105,31 @@ section.main div.image img {
     -o-object-position: center center;
        object-position: center center;
   }
+}
+
+div.background {
+  grid-column: full;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 200px);
+  z-index: 1;
+}
+div.background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgb(0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+          mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgb(0, 0, 0)));
+          mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.2;
 }
 
 section.discount img {

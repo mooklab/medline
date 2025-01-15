@@ -86,6 +86,11 @@ const createDialog = (target, video = null) => {
         }
     })
 
+    document.onkeydown = (event) => {
+        event = event || window.event
+        event.keyCode == 27 && dialog.remove()
+    }
+
 }
 
 // Добавляем в CSS переменную значение ширины скроллбара
